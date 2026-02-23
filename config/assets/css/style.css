@@ -1,0 +1,126 @@
+:root {
+    --primary: #0f172a;
+    --secondary: #334155;
+    --accent: #2563eb;
+    --bg: #f1f5f9;
+    --white: #ffffff;
+    --error-bg: #fef2f2;
+    --error-text: #b91c1c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 20px; /* Espacio para móviles */
+}
+
+.login-card {
+    background: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.brand img {
+    width: 65px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.brand h1 {
+    font-size: 1.25rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.error-box {
+    background: var(--error-bg);
+    color: var(--error-text);
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #fee2e2;
+    text-align: center;
+}
+
+.field {
+    margin-bottom: 1.25rem;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.85rem;
+}
+
+.field input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--accent);
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    color: #64748b;
+}
+
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 1.5rem;
+        box-shadow: none; 
+    }
+    
+    .brand h1 {
+        font-size: 1.1rem;
+    }
+}
