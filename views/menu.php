@@ -164,6 +164,8 @@ try {
             <a href="lista_tutores.php" class="nav-item-ae"><i class="fas fa-fingerprint"></i> <span>Lista Tutores</span></a>
             <a href="predefensas.php" class="nav-item-ae"><i class="fas fa-signature"></i> <span>Predefensas</span></a>
             <?php if($es_admin): ?>
+                <a href="lista_habilitados.php" class="nav-item-ae"><i class="fas fa-signature"></i> <span>lista</span></a>
+            <?php if($es_admin): ?>
             <a href="logs.php" class="nav-item-ae"><i class="fas fa-clipboard-list"></i> <span>Logs</span></a>
             <?php endif; ?>
         </nav>
