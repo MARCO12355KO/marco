@@ -18,8 +18,7 @@ try {
         PDO::ATTR_EMULATE_PREPARES   => false,
     ]);
 
-    // Opcional: mensaje de prueba
-    // echo "✅ Conexión exitosa a PostgreSQL (Render)";
+ 
 
 } catch (PDOException $e) {
     die('❌ Error de conexión a PostgreSQL: ' . $e->getMessage());
